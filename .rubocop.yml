@@ -1,0 +1,23 @@
+Style/Documentation:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Metrics/LineLength:
+  Enabled: false
+
+AllCops:
+  Exclude:
+    - 'bin/rails'
+    - 'config/routes.rb'
+    - spec/dummy/bin/update
+    - spec/dummy/bin/setup
+    - spec/dummy/bin/yarn
+    - spec/dummy/config/routes.rb
+    - spec/dummy/config/environments/production.rb
+    - spec/dummy/config/environment.rb
+    - spec/dummy/config/puma.rb
+    - spec/dummy/db/schema.rb
+    - spec/dummy/db/migrate/20190506185023_create_keybase_proofs.rb
+    - spec/rails_helper.rb

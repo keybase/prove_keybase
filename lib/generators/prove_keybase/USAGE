@@ -1,0 +1,9 @@
+Description:
+    create initializer and db migration for keybase proof integration
+
+Example:
+    bin/rails g prove_keybase install
+
+    This will create:
+        config/initializers/prove_keybase.rb
+        db/migrate/{X}_create_keybase_proofs.rb

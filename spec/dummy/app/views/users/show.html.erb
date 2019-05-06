@@ -1,0 +1,15 @@
+<h1>
+  User: <%= @user.username %>
+</h1>
+<p>
+<%= image_tag @user.avatar_url %>
+</p>
+
+<p>
+interesting things about this user.
+</p>
+
+<hr>
+
+<h3>Other Identities</h3>
+<%= render partial: 'prove_keybase/proofs/proof', collection: @user.keybase_proofs.active, as: :proof %>
