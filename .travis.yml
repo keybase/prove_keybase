@@ -1,0 +1,21 @@
+language: ruby
+
+before_install:
+  - gem uninstall -v '>= 2' -i $(rvm gemdir)@global -ax bundler || true
+  - gem install bundler -v '< 2'
+
+gemfile:
+  - Gemfile
+  - gemfiles/Gemfile.rails-6.0-beta
+  - gemfiles/Gemfile.rails-5.2-stable
+
+rvm:
+  - 2.3
+  - 2.6
+
+matrix:
+  exclude:
+    - rvm: 2.3
+      gemfile: gemfiles/Gemfile.rails-6.0-beta
+
+cache: bundler
