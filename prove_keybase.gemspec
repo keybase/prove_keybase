@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.homepage    = 'https://keybase.io'
   spec.summary     = 'Add the Keybase open protocol for identity proofs to your Rails app'
   spec.description = 'Add the Keybase open protocol for identity proofs to your Rails app'
-  spec.license     = 'BSD-3'
+  spec.license     = 'BSD-3-Clause'
   spec.files = Dir[
     '{app,config,lib}/**/*',
     'LICENSE',
