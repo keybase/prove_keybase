@@ -1,4 +1,6 @@
 # ProveKeybase
+[![Travis CI](https://travis-ci.org/keybase/prove_keybase.svg?branch=master)](https://travis-ci.org/keybase/prove_keybase)
+
 This is a drop-in implementation of Keybase's open proof protocol for Ruby on Rails. Here is a generic [implementation guide](https://keybase.io/docs/proof_integration_guide) and [announcement](https://keybase.io/blog/keybase-proofs-for-mastodon-and-everyone) for the protocol.
 
 ## Installation
