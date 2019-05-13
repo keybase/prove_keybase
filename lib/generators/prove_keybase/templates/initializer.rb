@@ -11,7 +11,7 @@ ProveKeybase.setup do |config|
   # domain (perhaps a subdomain, or for testing/staging purposes) you might
   # want to specify that the URLs are actually on a different domain. This
   # will default to `config.domain` above, so you can safely ignore this.
-  # config.domain_for_urls = 'yoursite.com'
+  # config._domain_for_urls = config.domain
 
   # This is the URL to which a Keybase user will be linked when they click
   # on a proof of one of your users. Please leave `%{username}` for interpolation
