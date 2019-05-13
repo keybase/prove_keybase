@@ -6,7 +6,6 @@ Rails.application.initialize!
 
 if Rails.env.test?
   ProveKeybase.configuration.domain = 'example.test'
-  ProveKeybase.configuration.domain_for_urls = 'example.test'
   ProveKeybase.configuration.profile_url = 'https://example.test/users/%{username}'
 
   class ActionDispatch::TestRequest
