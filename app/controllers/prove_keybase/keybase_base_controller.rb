@@ -18,15 +18,17 @@ class ProveKeybase::KeybaseBaseController < ::ApplicationController
     redirect_to new_proof_url(params: proof_params)
   end
 
-  def handle_wrong_logged_in_user(logged_in_as, proving)
-    flash[:alert] = "you're logged in as #{logged_in_as} but trying to prove #{proving}"
-    handle_login_redirect
-  end
-
   def avatar_url_from_username(username)
     # if you override this method, please keep the behavior
     # of raising an exception when a user does not exist.
     User.find_by!(username: username).avatar_url || 'https://example.com/default_avatar.jpg'
+  end
+
+  private
+
+  def handle_wrong_logged_in_user(logged_in_as, proving)
+    flash[:alert] = "you're logged in as #{logged_in_as} but trying to prove #{proving}"
+    handle_login_redirect
   end
 
   def handle_login_redirect

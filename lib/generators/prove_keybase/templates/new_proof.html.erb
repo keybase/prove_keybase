@@ -1,0 +1,18 @@
+<p id='alert'><%= alert %></p>
+
+<h2>Rewrite Me Please</h2>
+
+<p>this is you here:</p>
+<p><%= image_tag current_user.avatar_url, width: 200 %></p>
+
+<p>is this you on keybase?</p>
+<p><%= image_tag @proof.keybase_avatar_url, width: 200 %></p>
+
+
+<%= form_with scope: :proof, url: proofs_path, local: true do |f| %>
+  <%= f.hidden_field :token, value: @proof.token %>
+  <%= f.hidden_field :username, value: @proof.username %>
+  <%= f.hidden_field :kb_username, value: @proof.kb_username %>
+  <%= f.hidden_field :kb_ua, value: params[:kb_ua] %>
+  <%= submit_tag 'yes' %>
+<% end %>
