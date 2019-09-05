@@ -8,9 +8,9 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:password])
       session[:user_id] = user.id
       flash[:alert] = 'logged in!'
-    else
-      flash[:alert] = 'invalid'
+      return redirect_to user_path(user.username)
     end
+    flash[:alert] = 'invalid'
     redirect_to root_url
   end
 
