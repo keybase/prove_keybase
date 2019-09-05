@@ -1,6 +1,12 @@
 <h1>
   User: <%= @user.username %>
 </h1>
+
+<p>
+  click on this link to start a new proof in keybase:
+  <%= link_to "KEYBASE", keybase_link(@user) %>
+</p>
+
 <p>
 <%= image_tag @user.avatar_url %>
 </p>
