@@ -62,6 +62,10 @@ And if you have access to a locally running set of Keybase servers, I recommend 
 PORT=3001 KEYBASE_BASE_URL=http://localhost:3000 KEYBASE_MY_DOMAIN=8f9e4887.ngrok.io be rails s
 ```
 
+Pushing updates:
+1. bump the version as appropriate in lib/prove_keybase/version.rb
+2. `gem build prove_keybase.gemspec`
+3. `gem push prove_keybase-i.j.k.gem`
+
 ## License
 The gem is available as open source under the terms of this [license](./LICENSE).
-

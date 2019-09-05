@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email       = ['alex@keyba.se']
   spec.homepage    = 'https://keybase.io'
   spec.summary     = 'Add the Keybase open protocol for identity proofs to your Rails app'
-  spec.description = 'Add the Keybase open protocol for identity proofs to your Rails app'
+  spec.description = 'Add the Keybase open protocol for identity proofs to your Rails app. There\'s a bunch of docs for how to use it.'
   spec.license     = 'BSD-3-Clause'
   spec.files = Dir[
     '{app,config,lib}/**/*',
@@ -19,13 +19,13 @@ Gem::Specification.new do |spec|
   ]
   spec.required_ruby_version = '>= 2.3.0'
 
-  spec.add_dependency 'active_model_serializers'
-  spec.add_dependency 'faraday'
-  spec.add_dependency 'faraday_middleware'
+  spec.add_dependency 'active_model_serializers', '~>0.10'
+  spec.add_dependency 'faraday', '~>0.15'
+  spec.add_dependency 'faraday_middleware', '~>0.13'
 
-  spec.add_development_dependency 'bcrypt'
-  spec.add_development_dependency 'rspec-rails'
-  spec.add_development_dependency 'sqlite3'
-  spec.add_development_dependency 'travis'
-  spec.add_development_dependency 'webmock'
+  spec.add_development_dependency 'bcrypt', '~>3.1'
+  spec.add_development_dependency 'rspec-rails', '~>3.8'
+  spec.add_development_dependency 'sqlite3', '~>1.4'
+  spec.add_development_dependency 'travis', '~>1.8'
+  spec.add_development_dependency 'webmock', '~>3.7'
 end
