@@ -9,7 +9,13 @@ module ProveKeybase
   end
 
   class Configuration
+    extend ActiveModel::Naming
+    include ActiveModel::Conversion
     include ActiveModel::Serialization
+
+    def persisted?
+      false
+    end
 
     attr_accessor :domain, :display_name, :description, :brand_color,
                   :user_min_length, :user_max_length, :user_re, :logo_svg_full,
