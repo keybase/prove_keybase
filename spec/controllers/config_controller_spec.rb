@@ -20,7 +20,7 @@ describe ProveKeybase::ConfigController, type: :controller do
 
       config = JSON.parse(response.body)
       expect(config['profile_url']).to eq 'https://example.test/users/%{username}'
-      expect(config['check_url']).to eq "https://example.test/prove_keybase/api/v1/proofs/%{username}"
+      expect(config['check_url']).to eq "https://example.test/prove_keybase/api/v1/proofs?username=%{username}"
     end
   end
 end

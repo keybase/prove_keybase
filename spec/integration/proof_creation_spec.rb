@@ -60,7 +60,7 @@ RSpec.describe 'Proof Creation', type: :request, order: :defined do
     # dumbed-down version of what keybase is actually doing
     # to determine whether or not a proof is "live"
     username = request.uri.query_values['username']
-    get "/prove_keybase/api/v1/proofs/#{username}"
+    get "/prove_keybase/api/v1/proofs?username=#{username}"
 
     local_api_response = JSON.parse(response.body)['signatures']
     proof_live = (local_api_response == [{ 'sig_hash' => token, 'kb_username' => kb_username }])
