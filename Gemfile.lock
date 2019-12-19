@@ -2,9 +2,9 @@ PATH
   remote: .
   specs:
     prove_keybase (0.1.2)
-      active_model_serializers
-      faraday
-      faraday_middleware
+      active_model_serializers (~> 0.10)
+      faraday (~> 0.15)
+      faraday_middleware (~> 0.13)
 
 GEM
   remote: https://rubygems.org/
@@ -123,7 +123,7 @@ GEM
     pusher-client (0.6.2)
       json
       websocket (~> 1.0)
-    rack (2.0.7)
+    rack (2.0.8)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (5.2.3)
@@ -215,15 +215,15 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bcrypt
+  bcrypt (~> 3.1)
   prove_keybase!
   pry
   rails (~> 5.2.3)
-  rspec-rails
+  rspec-rails (~> 3.8)
   rubocop
-  sqlite3
-  travis
-  webmock
+  sqlite3 (~> 1.4)
+  travis (~> 1.8)
+  webmock (~> 3.7)
 
 BUNDLED WITH
    1.17.2
