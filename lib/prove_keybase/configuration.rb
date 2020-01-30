@@ -19,6 +19,7 @@ module ProveKeybase
 
     attr_accessor :domain, :display_name, :description, :brand_color,
                   :user_min_length, :user_max_length, :user_re, :logo_svg_full,
+                  :logo_svg_white, :logo_svg_full_darkmode,
                   :logo_svg_black, :profile_url, :contact, :keybase_base_url,
                   :default_keybase_avatar_url, :job_queue, :login_redirection,
                   :_domain_for_urls

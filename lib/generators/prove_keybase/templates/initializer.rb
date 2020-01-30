@@ -30,10 +30,12 @@ ProveKeybase.setup do |config|
   # A full color SVG. Should look good at 32px square. Expand all texts and strokes to shapes.
   # Here's an example of a good one.
   config.logo_svg_full = 'https://keybase.io/images/paramproofs/services/gubble.cloud/logo_full.svg'
+  config.logo_svg_full_darkmode = 'https://keybase.io/images/paramproofs/services/gubble.cloud/logo_svg_full_darkmode.svg'
 
   # A full-black monochrome SVG. Should look good at 16px square. Expand all texts and strokes to shapes.
   # Here's an example of a good one.
   config.logo_svg_black = 'https://keybase.io/images/paramproofs/services/gubble.cloud/logo_black.svg'
+  config.logo_svg_white = 'https://keybase.io/images/paramproofs/services/gubble.cloud/logo_white.svg'
 
   # So Keybase has someone to reach out to if there are any issues
   config.contact = ['dummy@yoursite.com', 'beezkneez@keybase']
