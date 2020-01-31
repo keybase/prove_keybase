@@ -12,7 +12,9 @@ class ProveKeybase::ConfigSerializer < ActiveModel::Serializer
 
   def logo
     { svg_black: object.logo_svg_black,
-      svg_full: object.logo_svg_full }
+      svg_white: object.logo_svg_white,
+      svg_full: object.logo_svg_full,
+      svg_full_darkmode: object.logo_svg_full_darkmode, }
   end
 
   def username
